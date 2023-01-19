@@ -1,71 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet"/>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> NLW SETUP</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NLW SETUP</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico"/>
-</head>
-<body>
-    <h1>[NLW] SETUP </h1>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+  </head>
+  <body>
+    <h1>[NLW] SETUP</h1>
     <header>
-        <img src="./assets/logo.svg" alt="Logomarca do aplicativo Habits" />
-        
-        <button>
-        <img src="./assets/plus.svg" alt="Icone de mais"/>
-        Registrar o meu dia
-        </button>
+      <img src="./assets/logo.svg" alt="Logomarca do aplicativo Habits" />
+      <button>
+        <img src="./assets/plus.svg" alt="Icone de mais" />
+        <div>Registrar o meu dia</div>
+      </button>
     </header>
-    
+
     <form id="form-habits">
-        <div class="habits">
-            <div class="habit">🏃‍♂️</div>
-            <div class="habit">💧</div>
-            <div class="habit">🍎</div>
-        </div>
+      <div class="habits">
+        <div class="habit" data-name="run">🏃‍♂️</div>
+        <div class="habit" data-name="water">💧</div>
+        <div class="habit" data-name="food">🍎</div>
+        <div class="habit" data-name="music">🎶</div>
+        <div class="habit" data-name="rocketseat">💻</div>
+      </div>
 
-        <div class="days">
-            <div class="day">
-                <div>03/01</div>
-                <input type="checkbox" name="run" />
-                <input type="checkbox" name="water" />
-                <input type="checkbox" name="food" />
-        </div>
-
-        <div class="days">
-            <div class="day">
-              <div>04/01</div>
-              <input type="checkbox" name="run" />
-              <input type="checkbox" name="water" />
-              <input type="checkbox" name="food" />
-        </div> 
-
-        <div class="days">
-            <div class="day">
-              <div>05/01</div>
-              <input type="checkbox" name="run" />
-              <input type="checkbox" name="water" />
-              <input type="checkbox" name="food" />
-        </div> 
-
-        <div class="days">
-            <div class="day">
-              <div>06/01</div>
-              <input type="checkbox" name="run" />
-              <input type="checkbox" name="water" />
-              <input type="checkbox" name="food" />
-        </div> 
+      <div class="days"></div>
     </form>
-    <footer>
-        Aula 01 - OK<br> 
-        Aula 02 - OK
-    </footer>
-</body>
-
-
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
