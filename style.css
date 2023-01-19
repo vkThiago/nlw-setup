@@ -6,15 +6,12 @@
 
 body {
   color: whitesmoke;
+  font-family: "Inter";
   height: 100vh;
-  background-image: linear-gradient(
-    45deg,
-    rgb(0, 0, 0),
-    rgb(37, 1, 51),
-    rgb(54, 2, 69)
-  );
+  background: linear-gradient(-45deg, #1c0121, #350148, #07012a, #8f02b2);
   background-size: 300% 300%;
-  animation: colors 5s ease infinite;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
 }
 
 header {
@@ -105,7 +102,7 @@ h1 {
   text-align: center;
 }
 
-@keyframes colors {
+@keyframes gradient {
   0% {
     background-position: 0% 50%;
   }
@@ -114,7 +111,9 @@ h1 {
   }
   100% {
     background-position: 0% 50%;
+
   }
+
 }
 
 @media (max-width: 570px) {
